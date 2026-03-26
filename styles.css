@@ -1,0 +1,84 @@
+:root {
+    --gold: #d4af37;
+    --dark-bg: #0f0f0f;
+    --gray-bg: #1a1a1a;
+    --text-light: #f4f4f4;
+    --text-muted: #a0a0a0;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: var(--gray-bg);
+    padding: 10px 20px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    height: 400px;
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--gold);
+}
+
+.section {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--gray-bg);
+    border-radius: 5px;
+}
+
+.menu-tabs {
+    display: flex;
+}
+
+.menu-tabs .tab {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--dark-bg);
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+footer {
+    background-color: var(--gray-bg);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
